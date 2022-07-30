@@ -3,7 +3,7 @@ import React from "react";
 const Hero = () => {
   return (
     <section className="relative hero-banner h-fit text-center z-10">
-      <div className="flex flex-col space-y-4 pt-32 pb-20 w-full">
+      <div className="flex flex-col space-y-4 pt-40 pb-20 w-full">
         <h1 className="text-white text-5xl lg:text-6xl font-bold">
           Self Storage Business
         </h1>

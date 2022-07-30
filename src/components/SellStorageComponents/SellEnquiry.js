@@ -1,6 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const SellEnquiry = () => {
+  let navigate = useNavigate();
+  const enquiry = () => {
+    navigate("/enquiry-sent");
+  };
   return (
     <div className="p-4 lg:p-12">
       <div className="bg-white w-full lg:w-10/12 border border-[#CDD4E7] mx-auto text-center p-8 lg:p-12 rounded-2xl">
@@ -253,7 +258,10 @@ const SellEnquiry = () => {
           </div>
         </div>
 
-        <button className="btn-secondary inline-flex justify-center items-center w-full lg:w-fit px-8 lg:px-20">
+        <button
+          className="btn-secondary inline-flex justify-center items-center w-full lg:w-fit px-8 lg:px-20"
+          onClick={enquiry}
+        >
           <span className="mr-4">Send Inquiry</span>
           <svg
             width="16"
