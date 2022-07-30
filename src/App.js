@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
@@ -14,20 +14,22 @@ import Post from "./components/Post";
 function App() {
   return (
     <>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
-        <AnimatePresence exitBeforeEnter>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/active-listings" element={<ActiveListing />} />
-            <Route path="/sell-storage" element={<SellStorage />} />
-            <Route path="/free-evaluation" element={<Evaluation />} />
-            <Route path="/learn" element={<Learn />} />
-            <Route path="/post" element={<Post />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/detail-page" element={<DetailPage />} />
-            <Route path="/enquiry-sent" element={<Inquirysent />} />
-          </Routes>
-        </AnimatePresence>
+      <BrowserRouter>
+        <HashRouter basename={process.env.PUBLIC_URL}>
+          <AnimatePresence exitBeforeEnter>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/active-listings" element={<ActiveListing />} />
+              <Route path="/sell-storage" element={<SellStorage />} />
+              <Route path="/free-evaluation" element={<Evaluation />} />
+              <Route path="/learn" element={<Learn />} />
+              <Route path="/post" element={<Post />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/detail-page" element={<DetailPage />} />
+              <Route path="/enquiry-sent" element={<Inquirysent />} />
+            </Routes>
+          </AnimatePresence>
+        </HashRouter>
       </BrowserRouter>
     </>
   );
