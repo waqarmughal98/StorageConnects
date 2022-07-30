@@ -1,6 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const HQueries = () => {
+  let naviagte = useNavigate();
+  const contact = () => {
+    naviagte("/contact");
+  };
   return (
     <div className="relative bg-skyback mx-auto">
       <div className="hqueries-bg py-40">
@@ -27,7 +32,10 @@ const HQueries = () => {
               </div>
 
               <div className="grid place-items-center">
-                <button className="btn-secondary inline-flex items-center w-56">
+                <button
+                  className="btn-secondary inline-flex items-center w-56"
+                  onClick={contact}
+                >
                   <span className="mr-4">Write to Us</span>
                   <svg
                     width="16"
