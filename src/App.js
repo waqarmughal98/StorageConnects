@@ -1,6 +1,5 @@
 import "./App.css";
-import { HashRouter, Route, Routes } from "react-router-dom";
-import { AnimatePresence } from "framer-motion";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
 import ActiveListing from "./components/ActiveListing";
@@ -14,7 +13,7 @@ import Post from "./components/Post";
 function App() {
   return (
     <>
-      <HashRouter>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/active-listings" element={<ActiveListing />} />
@@ -26,7 +25,7 @@ function App() {
           <Route path="/detail-page" element={<DetailPage />} />
           <Route path="/enquiry-sent" element={<Inquirysent />} />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </>
   );
 }
