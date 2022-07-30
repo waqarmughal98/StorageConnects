@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
@@ -14,7 +14,7 @@ import Post from "./components/Post";
 function App() {
   return (
     <>
-      <HashRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter basename="/storageconnects">
         <AnimatePresence exitBeforeEnter>
           <Routes>
             <Route path="/storageconnects" element={<Home />} />
