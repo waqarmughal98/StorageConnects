@@ -1,25 +1,12 @@
 import React from "react";
-import GridListView from "./GridListView";
 
 const FilterBar = (props) => {
-  let List = false;
-  let pro = "";
-  if (List === true) {
-    pro = "grid";
-  } else {
-    pro = "list";
-  }
   return (
     <>
       <div className="bg-activebg grid grid-cols-1 lg:grid-cols-3 gap-y-6 lg:gap-y-0 py-6 px-8 mt-8 rounded-lg">
         <div className="flex flex-row space-x-4 items-center">
           <div className="">
-            <button
-              className="inline-flex items-center"
-              onClick={() => {
-                List = true;
-              }}
-            >
+            <button className="inline-flex items-center">
               <svg
                 width="22"
                 height="17"
@@ -43,12 +30,7 @@ const FilterBar = (props) => {
             </button>
           </div>
           <div className="">
-            <button
-              className="inline-flex items-center"
-              onClick={() => {
-                List = false;
-              }}
-            >
+            <button className="inline-flex items-center">
               <svg
                 width="20"
                 height="20"
@@ -117,8 +99,6 @@ const FilterBar = (props) => {
           </div>
         </div>
       </div>
-
-      <GridListView display={pro} />
     </>
   );
 };

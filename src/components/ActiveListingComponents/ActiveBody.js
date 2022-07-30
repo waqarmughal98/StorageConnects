@@ -2,6 +2,7 @@ import React from "react";
 import SearchPanel from "./SearchPanel";
 import FilterBar from "./FilterBar";
 import TopPagination from "./TopPagination";
+import GridView from "./GridView";
 
 const ActiveBody = () => {
   return (
@@ -19,6 +20,7 @@ const ActiveBody = () => {
       <SearchPanel />
       <FilterBar />
       <TopPagination />
+      <GridView />
       <TopPagination />
     </div>
   );
