@@ -2,12 +2,10 @@ import React from "react";
 import BlogCard from "../HomeComponents/BlogCard";
 import BPagination from "./BPagination";
 import BTopFilter from "./BTopFilter";
-import HeadCategory from "./HeadCategory";
 
 const LearnBody = () => {
   return (
     <div className="px-8 py-16 lg:p-16">
-      <HeadCategory />
       <BTopFilter />
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 my-6">
         <BlogCard
