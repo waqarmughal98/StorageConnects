@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Card = (props) => {
   let navigate = useNavigate();
@@ -99,12 +99,14 @@ const Card = (props) => {
         </div>
       </div>
 
-      <button
-        className="btn-secondary mt-4 w-full text-center lg:w-fit"
-        onClick={detail}
-      >
-        View More Details
-      </button>
+      <Link to="/detail-page">
+        <button
+          className="btn-secondary mt-4 w-full text-center lg:w-fit"
+          // onClick={detail}
+        >
+          View More Details
+        </button>
+      </Link>
     </div>
   );
 };

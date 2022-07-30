@@ -36,7 +36,7 @@ const Footer = () => {
 
         <div className="col-span-2">
           <h1 className="fheader">Quick Links</h1>
-          <ul className="leading-9 ">
+          <ul className="leading-9">
             <li>Active Listings</li>
             <li>Self your Self Storage</li>
             <li>Free Evaluation</li>

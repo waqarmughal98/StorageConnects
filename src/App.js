@@ -13,7 +13,7 @@ import Post from "./components/Post";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route index element={<Home />} />
           <Route path="/active-listings" element={<ActiveListing />} />
