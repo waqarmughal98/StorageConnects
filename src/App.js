@@ -17,7 +17,7 @@ function App() {
       <HashRouter basename="/storageconnects">
         <AnimatePresence exitBeforeEnter>
           <Routes>
-            <Route path="/storageconnects" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/active-listings" element={<ActiveListing />} />
             <Route path="/sell-storage" element={<SellStorage />} />
             <Route path="/free-evaluation" element={<Evaluation />} />
