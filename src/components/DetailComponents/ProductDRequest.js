@@ -13,6 +13,7 @@ const ProductDRequest = () => {
         <h1 className="text-primary text-3xl font-bold pb-4">
           Request Details
         </h1>
+
         <p className="text-secondary text-lg pb-4">
           Provide us some details about the size and number of units you need
         </p>
