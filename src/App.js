@@ -18,7 +18,7 @@ function App() {
         <HashRouter basename={process.env.PUBLIC_URL}>
           <AnimatePresence exitBeforeEnter>
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/storageconnects" element={<Home />} />
               <Route path="/active-listings" element={<ActiveListing />} />
               <Route path="/sell-storage" element={<SellStorage />} />
               <Route path="/free-evaluation" element={<Evaluation />} />
