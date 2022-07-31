@@ -70,7 +70,7 @@ const PopUp = () => {
             </svg>
           </button>
 
-          <a href="#" className="modal__close">
+          <a href={closeModal} className="modal__close">
             <svg
               width="35"
               height="35"
