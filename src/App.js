@@ -9,7 +9,7 @@ import Learn from "./components/Learn";
 import DetailPage from "./components/DetailPage";
 import Inquirysent from "./components/Inquirysent";
 import Post from "./components/Post";
-import ActiveListingGrid from "./components/ActiveListingComponents/ActiveListingGrid";
+import ActiveListingList from "./components/ActiveListingComponents/ActiveListingList";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/active-listings" element={<ActiveListing />} />
-          <Route path="/active-grid-listings" element={<ActiveListingGrid />} />
+          <Route path="/active-grid-listings" element={<ActiveListingList />} />
           <Route path="/sell-storage" element={<SellStorage />} />
           <Route path="/free-evaluation" element={<Evaluation />} />
           <Route path="/learn" element={<Learn />} />

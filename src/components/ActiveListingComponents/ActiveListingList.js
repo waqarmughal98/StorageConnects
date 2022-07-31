@@ -8,7 +8,7 @@ import GridView from "./GridView";
 import Footer from "../layout/Footer";
 import PopUp from "./PopUp";
 
-const ActiveListingGrid = () => {
+const ActiveListingList = () => {
   return (
     <div>
       <Nav overlay={false} />
@@ -28,6 +28,7 @@ const ActiveListingGrid = () => {
         <FilterBar />
         <TopPagination />
         <GridView />
+        
         <TopPagination />
       </div>
       <Footer />
@@ -37,4 +38,4 @@ const ActiveListingGrid = () => {
   );
 };
 
-export default ActiveListingGrid;
+export default ActiveListingList;

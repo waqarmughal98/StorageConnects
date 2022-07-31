@@ -1,8 +1,20 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const FilterBar = (props) => {
   let navigate = useNavigate();
+  let location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname === "/active-listings") {
+      var list = document.getElementById("listview");
+      list.classList.add("active");
+    } else {
+      var grid = document.getElementById("gridview");
+      grid.classList.add("active");
+    }
+  });
+
   const gridView = () => {
     navigate("/active-grid-listings");
   };
@@ -10,27 +22,22 @@ const FilterBar = (props) => {
     navigate("/active-listings");
   };
 
-  document
-    .querySelector(".btn-group")
-    .addEventListener("click", ".btn", function () {
-      document
-        .querySelector(this)
-        .classList.add("active")
-        .siblings()
-        .classList.remove("active");
-    });
-
   return (
     <>
       <div className="bg-activebg grid grid-cols-1 lg:grid-cols-3 gap-y-6 lg:gap-y-0 py-6 px-8 mt-8 rounded-lg">
-        <div className="flex flex-row space-x-4 items-center">
+        <div className="btn-group flex flex-row space-x-4 items-center">
           <div className="">
-            <button className="inline-flex items-center" onClick={listView}>
+            <button
+              id="listview"
+              className="btn text-secondary inline-flex items-center"
+              onClick={listView}
+            >
               <svg
-                width="22"
-                height="17"
+                width="30"
+                height="30"
                 viewBox="0 0 22 17"
                 fill="none"
+                className="pr-2"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -45,11 +52,15 @@ const FilterBar = (props) => {
                   strokeLinejoin="round"
                 />
               </svg>
-              <p className="text-secondary pl-2 font-medium">List View</p>
+              <span className="font-medium">List View</span>
             </button>
           </div>
           <div className="">
-            <button className="inline-flex items-center" onClick={gridView}>
+            <button
+              id="gridview"
+              className="btn text-secondary inline-flex items-center"
+              onClick={gridView}
+            >
               <svg
                 width="20"
                 height="20"
@@ -63,7 +74,7 @@ const FilterBar = (props) => {
                   fillOpacity="0.7"
                 />
               </svg>
-              <p className="text-secondary pl-2 font-medium">Grid View</p>
+              <p className="pl-2 font-medium">Grid View</p>
             </button>
           </div>
         </div>

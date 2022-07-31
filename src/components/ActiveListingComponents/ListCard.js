@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const GridCard = (props) => {
+const ListCard = (props) => {
   let navigate = useNavigate();
   let detail = () => {
     navigate("/detail-page");
@@ -120,4 +120,4 @@ const GridCard = (props) => {
   );
 };
 
-export default GridCard;
+export default ListCard;
