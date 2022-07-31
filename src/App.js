@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
 import ActiveListing from "./components/ActiveListing";
@@ -9,6 +9,7 @@ import Learn from "./components/Learn";
 import DetailPage from "./components/DetailPage";
 import Inquirysent from "./components/Inquirysent";
 import Post from "./components/Post";
+import ActiveListingGrid from "./components/ActiveListingComponents/ActiveListingGrid";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/active-listings" element={<ActiveListing />} />
+          <Route path="/active-grid-listings" element={<ActiveListingGrid />} />
           <Route path="/sell-storage" element={<SellStorage />} />
           <Route path="/free-evaluation" element={<Evaluation />} />
           <Route path="/learn" element={<Learn />} />
