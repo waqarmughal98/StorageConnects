@@ -204,6 +204,14 @@ nav a.active {
   margin-top: 20px;
 }
 
+.btn-group .active {
+  color: #1849c6;
+  background: none;
+}
+.mobileMenu.active {
+  z-index: 20;
+}
+
 /* Popup */
 
 .wrapper a {

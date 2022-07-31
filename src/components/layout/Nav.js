@@ -12,7 +12,7 @@ const Nav = (props) => {
     >
       <div className="flex flex-row justify-between items-center">
         <Link to="/">
-          <div className="flex flex-row cursor-pointer relative z-30">
+          <div className="flex flex-row cursor-pointer relative z-20">
             <img
               src="./images/logo-icon.png"
               className="mr-2"
