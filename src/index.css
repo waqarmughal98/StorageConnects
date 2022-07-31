@@ -201,6 +201,7 @@ nav a.active {
 
 .gallery .thumbnail {
   border-radius: 10px;
+  margin-top: 20px;
 }
 
 /* Popup */
