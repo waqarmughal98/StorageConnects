@@ -3,10 +3,10 @@ import DetailContact from "./DetailContact";
 
 const ProductDRequest = () => {
   return (
-    <div className="relative bg-activebg mx-auto text-center px-4 py-16 lg:p-16">
+    <div className="relative w-full bg-activebg mx-auto text-center px-4 py-16 lg:p-16">
       <img
         src="./images/detail-request-bg.png"
-        className="absolute bottom-0"
+        className="absolute left-0 bottom-0"
         alt=""
       />
       <div>
