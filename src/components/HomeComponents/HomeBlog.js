@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import BlogCard from "./BlogCard";
 
 const HomeBlog = () => {
@@ -44,9 +45,11 @@ const HomeBlog = () => {
           />
         </div>
 
-        <button className="btn-primary px-8 py-4">
-          Explore the Learning Section
-        </button>
+        <Link to="/learn">
+          <button className="btn-primary px-8 py-4">
+            Explore the Learning Section
+          </button>
+        </Link>
       </div>
     </div>
   );

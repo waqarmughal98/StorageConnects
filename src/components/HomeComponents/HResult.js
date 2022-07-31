@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Card from "./Card";
 
 const HResult = () => {
@@ -49,9 +50,11 @@ const HResult = () => {
             size="40,233 Sq Ft"
           />
         </div>
-        <button className="btn-primary py-4 px-8 lg:px-20">
-          View More Listings
-        </button>
+        <Link to="/active-listings">
+          <button className="btn-primary py-4 px-8 lg:px-20">
+            View More Listings
+          </button>
+        </Link>
       </div>
     </div>
   );

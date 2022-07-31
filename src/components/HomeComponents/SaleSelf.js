@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const SaleSelf = () => {
   return (
@@ -18,9 +19,11 @@ const SaleSelf = () => {
             sapien sagittis maecenas tincidunt. Quis pretium ornare id diam amet
             proin scelerisque nunc.
           </p>
-          <button className="btn-secondary w-fit">
-            Sell Your Self Storage
-          </button>
+          <Link to="/self-storage">
+            <button className="btn-secondary w-fit">
+              Sell Your Self Storage
+            </button>
+          </Link>
         </div>
 
         <div className="grid place-content-end">
