@@ -10,7 +10,7 @@ const Footer = () => {
       />
       <img
         src="./images/footer-bg-right.png"
-        className="absolute bottom-0 right-16 z-0"
+        className="absolute hidden lg:block bottom-0 right-16 z-0"
         alt=""
       />
       <div className="grid grid-cols-1 lg:grid-cols-10 gap-y-12 lg:gap-y-0 px-4 lg:px-24 pt-40 pb-8 font-ftrFont text-secondary z-10">
