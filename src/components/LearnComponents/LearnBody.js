@@ -7,7 +7,7 @@ const LearnBody = () => {
   return (
     <div className="px-8 py-16 lg:p-16">
       <BTopFilter />
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 my-6">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 my-6">
         <BlogCard
           image="./images/blog-1.png"
           name="Everything you need to know about how to buy a Self Storage"
